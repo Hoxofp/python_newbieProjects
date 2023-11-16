@@ -1,0 +1,19 @@
+import sys
+sys.set_int_max_str_digits(1000000000)
+x1 = 0
+x2 = 1
+
+turSayisi = (int(input("Kaçıncı fibonacci sayısını görmek istediğinizi giriniz: "))-1)
+if turSayisi == 0 :
+    print(0)
+elif turSayisi == 1 :
+    print(1)
+else:
+    while turSayisi > 1 :
+        x3 = x2 + x1
+        x1 = x2 
+        x2 = x3
+        turSayisi = turSayisi - 1
+print(x3)        
+
+
