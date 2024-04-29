@@ -1,14 +1,14 @@
-girdi = input("fahrenheit mi celcius mu: ")
-dercr = int(input("serede"))
+input = input("Fahrenheit or Celsius (f or c): ")
+degree = int(input("Degree"))
 
 
-def fahrenheit_to_celcius (fahrenheit1):
-    celcius = (fahrenheit1-32)/1,8
-    return celcius
-def celcius_to_fahrenheit (celcius):
-    fahrenheit = (celcius*1,8 + 32)
+def fahrenheit_to_celsius (fahrenheit1):
+    celsius = (fahrenheit1-32)/1,8
+    return celsius
+def celsius_to_fahrenheit (celcius):
+    fahrenheit = (celsius*1,8 + 32)
     return fahrenheit
-if girdi == "f":
-    print("girdiğin fahrenheit değerin celcius karşılığı: " , fahrenheit_to_celcius(dercr))
-else:
-    print("girdiğin celcius değerin fahrenheit karşılığı: " , celcius_to_fahrenheit(dercr))
+if input == "f":
+    print("Celsius equivalent of the Fahrenheit value you entered: " , fahrenheit_to_celsius(dercr))
+elif input == "c":
+    print("Fahrenheit equivalent of the Celsius value you entered: " , celsius_to_fahrenheit(dercr))
