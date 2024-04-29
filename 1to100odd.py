@@ -9,8 +9,8 @@ i = 0
 sonuc = 0
 while i < 100:
     if (i % 2) == 1:
-        sonuc += i
+        total += i
     i += 1
     
 
-print(sonuc)
+print(total)
